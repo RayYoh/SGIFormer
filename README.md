@@ -25,8 +25,8 @@ This is the official implementation of paper "SGIFormer: Semantic-guided and Geo
 
 ## :memo: To-Do List
 - [x] Release trained weights and experiment record.
-- [ ] Installation instructions.
-- [ ] Processing datasets.
+- [x] Installation instructions.
+- [x] Processing datasets.
 - [ ] Release training configs.
 - [ ] Release training code.
 - [ ] Release visualization code.
