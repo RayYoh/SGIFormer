@@ -126,9 +126,9 @@ Our code is primarily built upon [Pointcept](https://github.com/Pointcept/Pointc
 
 ```bib
 @article{yao2024sgiformer,
-  author= {Lei Yao and Yi Wang and Moyun Liu and Lap-Pui Chau},
-  title= {SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation},
+  title={SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation},
+  author={Yao, Lei and Wang, Yi and Liu, Moyun and Chau, Lap-Pui},
   journal={arXiv preprint arXiv:2407.11564},
-  year={2023}
+  year={2024}
 }
 ```
