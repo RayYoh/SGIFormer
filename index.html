@@ -84,7 +84,7 @@
           <h1 class="title is-2 publication-title" style="color:rgba(74, 77, 163, 0.797)">SGIFormer <br>
             <p class="title is-3 publication-title">Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation</p>
           </h1>
-          <h1 class="title is-4" style="color: #5c5c5c;">Under Review, 2024</h1>
+          <h1 class="title is-4" style="color: #5c5c5c;">TCSVT, 2024</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://rayyoh.github.io/">Lei Yao</a><sup>1</sup>,</span>
@@ -184,7 +184,7 @@
             <div class="column is-four-fifths">
                 <h2 class="title is-3"><b style="color:rgba(74, 77, 163, 0.797)">Abstract</b></h2>
                 <div class="content has-text-justified">
-                    <p>Inspired by recent advances in 2D segmentation, transformer-based models have exhibited considerable potential in point cloud instance segmentation. Despite the promising performance achieved by existing methods, they encounter challenges such as instance query initialization problems and excessive reliance on stacked layers, rendering them incompatible with large-scale 3D scenes. In this paper, we introduce a novel method, named <b style="color:rgba(74, 77, 163, 0.797)">SGIFormer</b></strong>, for 3D instance segmentation, which combines <b>semantic-guided query initialization</b> and <b>geometric-enhanced interleaving transformer</b>. The principle of our query initialization scheme is to leverage the predicted voxel-wise semantic information to implicitly generate the non-parametric query, yielding adequate scene prior and detail retention. Subsequently, by incorporating another learnable query set, we feed the formed overall query into our decoder to alternately refine instance query and global scene features for further capturing fine-grained information and reducing complex design intricacies simultaneously. To emphasize geometric property, we consider bias estimation as an auxiliary task and progressively integrate shifted point coordinates embedding to reinforce instance localization. <b style="color:rgba(74, 77, 163, 0.797)">SGIFormer</b></strong> attains state-of-the-art performance on ScanNet V2, ScanNet200 datasets and challenging high-fidelity ScanNet++ benchmark, striking a balance between accuracy and efficiency.</p>
+                    <p>In recent years, transformer-based models have exhibited considerable potential in point cloud instance segmentation. Despite the promising performance achieved by existing methods, they encounter challenges such as instance query initialization problems and excessive reliance on stacked layers, rendering them incompatible with large-scale 3D scenes. This paper introduces a novel method, named <b style="color:rgba(74, 77, 163, 0.797)">SGIFormer</b></strong>, for 3D instance segmentation, which is composed of the Semantic-guided Mix Query (SMQ) initialization and the Geometric-enhanced Interleaving Transformer (GIT) decoder. Specifically, the principle of our SMQ initialization scheme is to leverage the predicted voxel-wise semantic information to implicitly generate the scene-aware query, yielding adequate scene prior and compensating for the learnable query set. Subsequently, we feed the formed overall query into our GIT decoder to alternately refine instance query and global scene features for further capturing fine-grained information and reducing complex design intricacies simultaneously. To emphasize geometric property, we consider bias estimation as an auxiliary task and progressively integrate shifted point coordinates embedding to reinforce instance localization. <b style="color:rgba(74, 77, 163, 0.797)">SGIFormer</b></strong> attains state-of-the-art performance on ScanNet V2, ScanNet200, S3DIS datasets, and the challenging high-fidelity ScanNet++ benchmark, striking a balance between accuracy and efficiency.</p>
                 </div>
             </div>
         </div>
@@ -320,12 +320,13 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX 🙏</h2>
-    <pre><code>@article{yao2024SGIFormer,
-  author    = {Lei Yao and Yi Wang and Moyun Liu and Lap-Pui Chau},
-  title     = {SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation},
-  journal   = {arXiv preprint arXiv:2407.11564},
-  year      = {2024},
-}</code></pre>
+    <pre><code>@article{yao2024sgiformer,
+      title={SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation},
+      author={Yao, Lei and Wang, Yi and Liu, Moyun and Chau, Lap-Pui},
+      journal={IEEE Transactions on Circuits and Systems for Video Technology},
+      year={2024},
+      publisher={IEEE}
+    }</code></pre>
   </div>
 </section>
 
