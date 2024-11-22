@@ -7,7 +7,7 @@
 
 [**Paper**](https://arxiv.org/abs/2407.11564) | [**Project Page**](https://rayyoh.github.io/SGIFormer/) | [**Weights**](https://huggingface.co/RayYoh/SGIFormer)
 
-Codes will be coming soon.
+If you have any questions, please consider open an issue. I will help you in any way I can.
 
 </div>
 
@@ -102,6 +102,43 @@ python pointcept/datasets/preprocessing/sampling_chunking_data.py --dataset_root
 mkdir data
 ln -s ${PROCESSED_SCANNETPP_DIR} ${CODEBASE_DIR}/data/scannetpp
 ```
+
+## 🚀 Training
+Same to [Pointcept](https://github.com/Pointcept/Pointcept), the training process is based on configs in `configs` folder. The training scripts will create an experiment folder in `exp` and backup essential code in the experiment folder. Training config, log file, tensorboard, and checkpoints will also be saved during the training process.
+
+**ScanNet V2, SGIFormer**
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 sh scripts/train.sh -g 4 -d scannet -c insseg-spformer-pt-spunet-v2 -n insseg-spformer-pt-spunet-v2
+CUDA_VISIBLE_DEVICES=0,1,2,3 sh scripts/train.sh -g 4 -d scannet -c insseg-sgiformer-spunet-v2 -n insseg-sgiformer-spunet-v2
+```
+You can also optionally skip the first step and use our provided pre-trained weight [scannetv2_pt](https://huggingface.co/RayYoh/SGIFormer/blob/main/scannetv2_pt.pth).
+
+**ScanNet V2, SGIFormer-L**
+
+First download the pre-trained backbone from [Spherical Mask](https://github.com/yunshin/SphericalMask) [Weight](https://drive.google.com/file/d/1OeHRgkEkxvPkUOrFacmNUevrrAjHW6DA/view).
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 sh scripts/train.sh -g 4 -d scannet -c insseg-sgiformer-l-spunet-v2 -n insseg-sgiformer-l-spunet-v2
+```
+
+**ScanNet200, SGIFormer**
+
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 sh scripts/train.sh -g 4 -d scannet200 -c insseg-spformer-pt-spunet-v2 -n insseg-spformer-pt-spunet-v2
+CUDA_VISIBLE_DEVICES=0,1,2,3 sh scripts/train.sh -g 4 -d scannet200 -c insseg-sgiformer-spunet-v2 -n insseg-sgiformer-spunet-v2
+```
+You can also optionally skip the first step and use our provided pre-trained weight [scannet200_pt](https://huggingface.co/RayYoh/SGIFormer/blob/main/scannet200_pt.pth).
+
+**ScanNet200, SGIFormer-L**
+First download the pre-trained backbone from [Mask3D](https://github.com/JonasSchult/Mask3D) [Weight](https://github.com/oneformer3d/oneformer3d/releases/download/v1.0/mask3d_scannet200.pth), you can also use our provided weight [mask3d_scannet200](https://huggingface.co/RayYoh/SGIFormer/blob/main/mask3d_scannet200.pth).
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 sh scripts/train.sh -g 4 -d scannet200 -c insseg-sgiformer-l-minkunet -n insseg-sgiformer-l-minkunet
+```
+
+**ScanNet++, SGIFormer**
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 sh scripts/train.sh -g 4 -d scannetpp -c insseg-sgiformer-spunet-v2 -n insseg-sgiformer-spunet-v2
+```
+**Note**: we load the model pre-trained on ScanNet V2, you need to train ScanNet V2 first or use our provided weight [insseg-scannet-sgiformer-spunet](https://huggingface.co/RayYoh/SGIFormer/tree/main/insseg-scannet-sgiformer-spunet).
 
 ## :floppy_disk: Trained Weights
 | Model | Benchmark | Num GPUs | mAP | AP50 | Config | Exp Record | Model |
