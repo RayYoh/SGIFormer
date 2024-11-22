@@ -5,7 +5,7 @@
 [![python](https://img.shields.io/badge/-Python_3.8-blue?logo=python&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)](LICENSE)
 
-[**Paper**](https://arxiv.org/abs/2407.11564) | [**Project Page**](https://rayyoh.github.io/sgiformer/) | [**Weights**](https://huggingface.co/RayYoh/SGIFormer)
+[**Paper**](https://arxiv.org/abs/2407.11564) | [**Project Page**](https://rayyoh.github.io/SGIformer/) | [**Weights**](https://huggingface.co/RayYoh/SGIFormer)
 
 Codes will be coming soon.
 
@@ -27,7 +27,7 @@ This is the official implementation of paper "SGIFormer: Semantic-guided and Geo
 - [x] Release trained weights and experiment record.
 - [x] Installation instructions.
 - [x] Processing datasets.
-- [ ] Release training configs.
+- [x] Release training configs.
 - [ ] Release training code.
 - [ ] Release visualization code.
 
@@ -128,7 +128,8 @@ Our code is primarily built upon [Pointcept](https://github.com/Pointcept/Pointc
 @article{yao2024sgiformer,
   title={SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation},
   author={Yao, Lei and Wang, Yi and Liu, Moyun and Chau, Lap-Pui},
-  journal={arXiv preprint arXiv:2407.11564},
-  year={2024}
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2024},
+  publisher={IEEE}
 }
 ```
