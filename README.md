@@ -5,7 +5,7 @@
 [![python](https://img.shields.io/badge/-Python_3.8-blue?logo=python&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)](LICENSE)
 
-[**Paper**](https://arxiv.org/abs/2407.11564) | [**Project Page**](https://rayyoh.github.io/SGIformer/) | [**Weights**](https://huggingface.co/RayYoh/SGIFormer)
+[**Paper**](https://arxiv.org/abs/2407.11564) | [**Project Page**](https://rayyoh.github.io/SGIFormer/) | [**Weights**](https://huggingface.co/RayYoh/SGIFormer)
 
 Codes will be coming soon.
 
