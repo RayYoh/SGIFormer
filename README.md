@@ -28,8 +28,7 @@ This is the official implementation of paper "SGIFormer: Semantic-guided and Geo
 - [x] Installation instructions.
 - [x] Processing datasets.
 - [x] Release training configs.
-- [ ] Release training code.
-- [ ] Release visualization code.
+- [x] Release training code.
 
 
 ## :hammer: Installation
@@ -107,11 +106,11 @@ ln -s ${PROCESSED_SCANNETPP_DIR} ${CODEBASE_DIR}/data/scannetpp
 ## :floppy_disk: Trained Weights
 | Model | Benchmark | Num GPUs | mAP | AP50 | Config | Exp Record | Model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| SGIFormer | ScanNet++ Val | 4 | 23.9 | 37.5 |   | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannetpp-sgiformer-spunet/train.log)  | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannetpp-sgiformer-spunet/model/model_best.pth)  |
-| SGIFormer | ScanNet Val | 4 | 58.9 | 78.4  |   | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet-sgiformer-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet-sgiformer-spunet/model/model_best.pth) |
-| SGIFormer-L | ScanNet Val | 4 | 61.0 | 81.2 |   | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet-sgiformer-l-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet-sgiformer-l-spunet/model/model_best.pth) |
-| SGIFormer | ScanNet200 Val | 4 | 28.9 | 38.6  |   | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet200-sgiformer-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet200-sgiformer-spunet/model/model_best.pth) |
-| SGIFormer-L | ScanNet200 Val | 4 | 29.2 | 39.4 |   | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet-sgiformer-l-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet-sgiformer-l-spunet/model/model_best.pth) |
+| SGIFormer | ScanNet++ Val | 4 | 23.9 | 37.5 | [Link](https://github.com/RayYoh/SGIFormer/blob/main/configs/scannetpp/insseg-sgiformer-spunet-v2.py) | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannetpp-sgiformer-spunet/train.log)  | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannetpp-sgiformer-spunet/model/model_best.pth)  |
+| SGIFormer | ScanNet Val | 4 | 58.9 | 78.4  | [Link](https://github.com/RayYoh/SGIFormer/blob/main/configs/scannet/insseg-sgiformer-spunet-v2.py) | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet-sgiformer-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet-sgiformer-spunet/model/model_best.pth) |
+| SGIFormer-L | ScanNet Val | 4 | 61.0 | 81.2 | [Link](https://github.com/RayYoh/SGIFormer/blob/main/configs/scannet/insseg-sgiformer-l-spunet-v2.py) | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet-sgiformer-l-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet-sgiformer-l-spunet/model/model_best.pth) |
+| SGIFormer | ScanNet200 Val | 4 | 28.9 | 38.6  | [Link](https://github.com/RayYoh/SGIFormer/blob/main/configs/scannet200/insseg-sgiformer-spunet-v2.py) | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet200-sgiformer-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet200-sgiformer-spunet/model/model_best.pth) |
+| SGIFormer-L | ScanNet200 Val | 4 | 29.2 | 39.4 | [Link](https://github.com/RayYoh/SGIFormer/blob/main/configs/scannet200/insseg-sgiformer-l-minkunet.py) | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet-sgiformer-l-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet-sgiformer-l-spunet/model/model_best.pth) |
 
 
 ## :books: License
