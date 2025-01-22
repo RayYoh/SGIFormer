@@ -18,7 +18,7 @@ If you have any questions, please consider open an issue. I will help you in any
 This is the official implementation of paper "SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation".
 
 <details>
-<summary><b>Update: SGIFormer achieves the SOTA performance on ScanNet++ V2 test set for 3D instance segmentation. Test scores accessed on 22 Jan 2025. <a href="https://kaldir.vc.in.tum.de/scannetpp/benchmark/insseg" target="_blank">ScanNet++ V2 test set</a></b></summary>
+<summary><b>Update: SGIFormer achieves the SOTA performance on ScanNet++ V2 test set for 3D instance segmentation. Test scores accessed on 22 Jan 2025. <a href="https://kaldir.vc.in.tum.de/scannetpp/benchmark/insseg" target="_blank">ScanNet++ V2 test set</a></b> (The results are provided by official based on this repo)</summary>
 
 ![image](./docs/leadboard_v2.png)
 </details>
