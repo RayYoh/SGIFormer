@@ -18,6 +18,12 @@ If you have any questions, please consider open an issue. I will help you in any
 This is the official implementation of paper "SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation".
 
 <details>
+<summary><b>Update: SGIFormer achieves the SOTA performance on ScanNet++ V2 test set for 3D instance segmentation. Test scores accessed on 22 Jan 2025. <a href="https://kaldir.vc.in.tum.de/scannetpp/benchmark/insseg" target="_blank">ScanNet++ V2 test set</a></b></summary>
+
+![image](./docs/leadboard_v2.png)
+</details>
+
+<details>
 <summary><b> SGIFormer achieves the SOTA performance on ScanNet++ test set for 3D instance segmentation benchmark. Test scores accessed on 24 June 2024. </b></summary>
 
 ![image](./docs/leadboard.png)
@@ -35,6 +41,7 @@ This is the official implementation of paper "SGIFormer: Semantic-guided and Geo
 ## :floppy_disk: Trained Results
 | Model | Benchmark | Num GPUs | mAP | AP50 | Config | Tensorboard | Exp Record | Model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| SGIFormer | ScanNet++ V2 Test | - | 29.9 | 45.7 | - | - | - | - |
 | SGIFormer | ScanNet++ Val | 4 | 23.9 | 37.5 | [Link](https://github.com/RayYoh/SGIFormer/blob/main/configs/scannetpp/insseg-sgiformer-spunet-v2.py) | [Link](https://huggingface.co/RayYoh/SGIFormer/tensorboard) | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannetpp-sgiformer-spunet/train.log)  | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannetpp-sgiformer-spunet/model/model_best.pth)  |
 | SGIFormer | ScanNet Val | 4 | 58.9 | 78.4  | [Link](https://github.com/RayYoh/SGIFormer/blob/main/configs/scannet/insseg-sgiformer-spunet-v2.py) | - | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet-sgiformer-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet-sgiformer-spunet/model/model_best.pth) |
 | SGIFormer-L | ScanNet Val | 4 | 61.0 | 81.2 | [Link](https://github.com/RayYoh/SGIFormer/blob/main/configs/scannet/insseg-sgiformer-l-spunet-v2.py) | - | [Link](https://huggingface.co/RayYoh/SGIFormer/raw/main/insseg-scannet-sgiformer-l-spunet/train.log) | [Link](https://huggingface.co/RayYoh/SGIFormer/blob/main/insseg-scannet-sgiformer-l-spunet/model/model_best.pth) |
