@@ -17,6 +17,8 @@ If you have any questions, please consider open an issue. I will help you in any
 
 This is the official implementation of paper "SGIFormer: Semantic-guided and Geometric-enhanced Interleaving Transformer for 3D Instance Segmentation".
 
+<b>Update (27/05/2025):</b> Our new method, [LaSSM](https://github.com/RayYoh/LaSSM), achieves better performance on ScanNet++ V2, and SGIFormer won second place at the [CVPR 2025 ScanNet++ challenge](https://kaldir.vc.in.tum.de/scannetpp/cvpr2025).
+
 <details>
 <summary><b>Update: SGIFormer achieves the SOTA performance on ScanNet++ V2 test set for 3D instance segmentation. Test scores accessed on 22 Jan 2025. <a href="https://kaldir.vc.in.tum.de/scannetpp/benchmark/insseg" target="_blank">ScanNet++ V2 test set</a></b> (The results are provided by official based on this repo)</summary>
 
